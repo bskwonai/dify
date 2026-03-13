@@ -132,7 +132,7 @@ class TokenBufferMemory:
         if message_limit and message_limit > 0:
             message_limit = min(message_limit, 500)
         else:
-            message_limit = 500
+            message_limit = 10
 
         msg_limit_stmt = stmt.limit(message_limit)
 
